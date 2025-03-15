@@ -1,0 +1,73 @@
+.exit
+console.log("TokenExchange CryptoSilver balance:", ethers.formatUnits(balance, 18));
+const balance = await CryptoSilver.balanceOf("0xc91D2d58D11FB74bAfde237ce5D9ffcBf4999B66");
+console.log("Swap transaction hash:", swapTx.hash);
+await swapTx.wait();
+const swapTx = await TokenExchange.exchange(amountIn, minAmountOut);
+const minAmountOut = ethers.parseUnits("100", 18); // Minimum acceptable output (100 CryptoSilver tokens)
+const amountIn = ethers.parseUnits("50", 18); // Amount of CryptoGold to swap
+console.log("TokenExchange CryptoSilver Balance:", ethers.formatUnits(exchangeSilverBalance, 18));
+const exchangeSilverBalance = await CryptoSilver.balanceOf("0xc91D2d58D11FB74bAfde237ce5D9ffcBf4999B66");
+console.log("Swap transaction hash:", swapTx.hash);
+await swapTx.wait();
+const swapTx = await TokenExchange.exchange(amountIn, minAmountOut);
+const minAmountOut = ethers.parseUnits("100", 18); // Minimum acceptable output (100 CryptoSilver tokens)
+const amountIn = ethers.parseUnits("50", 18); // Amount of CryptoGold to swap const minAmountOut = ethers.parseUnits("500", 18); // Minimum acceptable output (100 CryptoSilver tokens) const swapTx = await TokenExchange.exchange(amountIn, minAmountOut); await swapTx.wait(); console.log("Swap transaction hash:", swapTx.hash);
+const amountIn = ethers.parseUnits("500", 18); // Amount of CryptoGold to swap const minAmountOut = ethers.parseUnits("100", 18); // Minimum acceptable output (100 CryptoSilver tokens) const swapTx = await TokenExchange.exchange(amountIn, minAmountOut); await swapTx.wait(); console.log("Swap transaction hash:", swapTx.hash);
+const amountToApprove = ethers.parseUnits("500", 18); // Approve 500 CryptoGold tokens const approvalTx = await CryptoGold.approve("0xc91D2d58D11FB74bAfde237ce5D9ffcBf4999B66", amountToApprove); await approvalTx.wait(); console.log("Approval transaction hash:", approvalTx.hash);
+const CryptoSilver = await ethers.getContractAt("CryptoSilver", "0x554274f68A271E9449ef8B0e7531a9Cc03807006");
+const CryptoGold = await ethers.getContractAt("CryptoGold", "0xC772CA584BDD329713B9eA8298f0Bb2261D4c696");
+const TokenExchange = await ethers.getContractAt("TokenExchange", "0xc91D2d58D11FB74bAfde237ce5D9ffcBf4999B66");
+.exit
+const userAddress = "0xa3DC57992717e772c10034A4901D5fcfcb88eA9C"; // Replace with your wallet address const goldBalance = await CryptoGold.balanceOf(userAddress); const silverBalance = await CryptoSilver.balanceOf(userAddress);
+console.log("Swap transaction hash:", swapTx.hash);
+await swapTx.wait();
+const swapTx = await TokenExchange.exchange(amountIn, minAmountOut);
+const minAmountOut = ethers.parseUnits("100", 18); // Minimum acceptable output (100 CryptoSilver tokens)
+const amountIn = ethers.parseUnits("50", 18); // Swap 50 CryptoGold tokens
+console.log("Approval transaction hash:", tx.hash);
+await tx.wait();
+const tx = await CryptoGold.approve("0xc91D2d58D11FB74bAfde237ce5D9ffcBf4999B66", amountToApprove);
+const amountToApprove = ethers.parseUnits("50", 18); // Approve 50 CryptoGold tokens
+const TokenExchange = await ethers.getContractAt("TokenExchange", "0xc91D2d58D11FB74bAfde237ce5D9ffcBf4999B66");
+const CryptoGold = await ethers.getContractAt("CryptoGold", "0xC772CA584BDD329713B9eA8298f0Bb2261D4c696");
+console.log("Approval transaction hash:", tx.hash);
+await tx.wait();
+const tx = await CryptoGold.approve("0xc91D2d58D11FB74bAfde237ce5D9ffcBf4999B66", amountToApprove);
+const amountToApprove = ethers.parseUnits("50", 18); // Approve 50 CryptoGold tokens
+console.log("CryptoSilver Balance:", ethers.formatUnits(silverBalance, 18));
+console.log("CryptoGold Balance:", ethers.formatUnits(goldBalance, 18));
+const silverBalance = await CryptoSilver.balanceOf(userAddress);
+const goldBalance = await CryptoGold.balanceOf(userAddress);
+const userAddress = "your-wallet-address"; // Replace with your wallet address
+console.log("Swap transaction hash:", swapTx.hash);
+await swapTx.wait();
+const swapTx = await TokenExchange.exchange(amountIn, minAmountOut);
+const minAmountOut = ethers.parseUnits("100", 18); // Minimum acceptable output (100 CryptoSilver tokens)
+const amountIn = ethers.parseUnits("50", 18); // Swap 50 CryptoGold tokens
+console.log("Approval transaction hash:", tx.hash);
+await tx.wait();
+const tx = await CryptoGold.approve("0xc91D2d58D11FB74bAfde237ce5D9ffcBf4999B66", amountToApprove);
+const amountToApprove = ethers.parseUnits("50", 18); // Approve 50 CryptoGold tokens
+console.log("Approval transaction hash:", tx.hash);
+await tx.wait();
+const tx = await CryptoGold.approve("0xc91D2d58D11FB74bAfde237ce5D9ffcBf4999B66", amountToApprove);
+const amountToApprove = ethers.parseUnits("50", 18); // Approve 50 CryptoGold tokens
+console.log("Swap executed:", tx.hash);
+await tx.wait();
+const tx = await TokenExchange.exchange(amountIn, minAmountOut);
+const minAmountOut = ethers.parseUnits("100", 18); // Minimum acceptable CryptoSilver output
+await CryptoGold.approve("0xc91D2d58D11FB74bAfde237ce5D9ffcBf4999B66", amountIn);
+const amountIn = ethers.parseUnits("50", 18); // Amount of CryptoGold to swap
+const CryptoSilver = await ethers.getContractAt("CryptoSilver", "0x554274f68A271E9449ef8B0e7531a9Cc03807006");
+const CryptoGold = await ethers.getContractAt("CryptoGold", "0xC772CA584BDD329713B9eA8298f0Bb2261D4c696");
+const TokenExchange = await ethers.getContractAt("TokenExchange", "0xc91D2d58D11FB74bAfde237ce5D9ffcBf4999B66");
+await CryptoSilver.transfer("0xc91D2d58D11FB74bAfde237ce5D9ffcBf4999B66", ethers.parseUnits("1000", 18));
+console.log(swapTx);
+const swapTx = await TokenExchange.exchange(ethers.parseUnits("50", 18), ethers.parseUnits("100", 18));
+await CryptoGold.transfer("recipient-address", ethers.parseUnits("10", 18));
+console.log("CryptoGold balance:", balance.toString());
+const balance = await CryptoGold.balanceOf("your-address");
+const TokenExchange = await ethers.getContractAt("TokenExchange", "0xc91D2d58D11FB74bAfde237ce5D9ffcBf4999B66");
+const CryptoSilver = await ethers.getContractAt("CryptoSilver", "0x554274f68A271E9449ef8B0e7531a9Cc03807006");
+const CryptoGold = await ethers.getContractAt("CryptoGold", "0xC772CA584BDD329713B9eA8298f0Bb2261D4c696");
